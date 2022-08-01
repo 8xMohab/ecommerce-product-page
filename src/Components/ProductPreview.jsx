@@ -35,8 +35,11 @@ function ProductPreview() {
         className="product-preview-image"
         ref={imageRef}
         style={{
+          // https://8xmohab.github.io/ecommerce-product-page/Images/image-product-1.jpg
           backgroundImage: `url(${
-            process.env.PUBLIC_URL + "./Images/image-product-" + index + ".jpg"
+            "https://8xmohab.github.io/ecommerce-product-page/Images/image-product-" +
+            index +
+            ".jpg"
           })`,
         }}
       >
@@ -48,7 +51,9 @@ function ProductPreview() {
           className={index === 1 ? "thumbnail active-thumbnail" : "thumbnail"}
           style={{
             backgroundImage: `url(${
-              process.env.PUBLIC_URL + "./Images/image-product-" + 1 + ".jpg"
+              "https://8xmohab.github.io/ecommerce-product-page/Images/image-product-" +
+              1 +
+              "-thumbnail.jpg"
             })`,
           }}
           onClick={() => {
@@ -59,7 +64,9 @@ function ProductPreview() {
           className={index === 2 ? "thumbnail active-thumbnail" : "thumbnail"}
           style={{
             backgroundImage: `url(${
-              process.env.PUBLIC_URL + "./Images/image-product-" + 2 + ".jpg"
+              "https://8xmohab.github.io/ecommerce-product-page/Images/image-product-" +
+              2 +
+              "-thumbnail.jpg"
             })`,
           }}
           onClick={() => {
@@ -70,7 +77,9 @@ function ProductPreview() {
           className={index === 3 ? "thumbnail active-thumbnail" : "thumbnail"}
           style={{
             backgroundImage: `url(${
-              process.env.PUBLIC_URL + "./Images/image-product-" + 3 + ".jpg"
+              "https://8xmohab.github.io/ecommerce-product-page/Images/image-product-" +
+              3 +
+              "-thumbnail.jpg"
             })`,
           }}
           onClick={() => {
@@ -81,7 +90,9 @@ function ProductPreview() {
           className={index === 4 ? "thumbnail active-thumbnail" : "thumbnail"}
           style={{
             backgroundImage: `url(${
-              process.env.PUBLIC_URL + "./Images/image-product-" + 4 + ".jpg"
+              "https://8xmohab.github.io/ecommerce-product-page/Images/image-product-" +
+              4 +
+              "-thumbnail.jpg"
             })`,
           }}
           onClick={() => {
@@ -98,8 +109,7 @@ function ProductPreview() {
           className="product-preview-image"
           style={{
             backgroundImage: `url(${
-              process.env.PUBLIC_URL +
-              "./Images/image-product-" +
+              "https://8xmohab.github.io/ecommerce-product-page/Images/image-product-" +
               index +
               ".jpg"
             })`,
@@ -121,7 +131,9 @@ function ProductPreview() {
             className={index === 1 ? "thumbnail active-thumbnail" : "thumbnail"}
             style={{
               backgroundImage: `url(${
-                process.env.PUBLIC_URL + "./Images/image-product-" + 1 + ".jpg"
+                "https://8xmohab.github.io/ecommerce-product-page/Images/image-product-" +
+                1 +
+                "-thumbnail.jpg"
               })`,
             }}
             onClick={() => {
@@ -132,7 +144,9 @@ function ProductPreview() {
             className={index === 2 ? "thumbnail active-thumbnail" : "thumbnail"}
             style={{
               backgroundImage: `url(${
-                process.env.PUBLIC_URL + "./Images/image-product-" + 2 + ".jpg"
+                "https://8xmohab.github.io/ecommerce-product-page/Images/image-product-" +
+                2 +
+                "-thumbnail.jpg"
               })`,
             }}
             onClick={() => {
@@ -143,7 +157,9 @@ function ProductPreview() {
             className={index === 3 ? "thumbnail active-thumbnail" : "thumbnail"}
             style={{
               backgroundImage: `url(${
-                process.env.PUBLIC_URL + "./Images/image-product-" + 3 + ".jpg"
+                "https://8xmohab.github.io/ecommerce-product-page/Images/image-product-" +
+                3 +
+                "-thumbnail.jpg"
               })`,
             }}
             onClick={() => {
@@ -154,7 +170,9 @@ function ProductPreview() {
             className={index === 4 ? "thumbnail active-thumbnail" : "thumbnail"}
             style={{
               backgroundImage: `url(${
-                process.env.PUBLIC_URL + "./Images/image-product-" + 4 + ".jpg"
+                "https://8xmohab.github.io/ecommerce-product-page/Images/image-product-" +
+                4 +
+                "-thumbnail.jpg"
               })`,
             }}
             onClick={() => {

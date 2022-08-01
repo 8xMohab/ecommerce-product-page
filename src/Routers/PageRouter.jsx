@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, useRoutes } from "react-router-dom";
 // Components
 import NavBar from "../Components/NavBar";
 // Pages
@@ -11,20 +11,23 @@ import About from "../Pages/About";
 import Contact from "../Pages/Contact";
 import Error from "../Pages/Error";
 function PagesRouter() {
+  const App = () =>
+    useRoutes([
+      { path: "/", element: <Home /> },
+      { path: "/ecommerce-product-page", element: <Home /> },
+      { path: "/collections", element: <Collections /> },
+      { path: "/men", element: <Men /> },
+      { path: "/women", element: <Women /> },
+      { path: "/about", element: <About /> },
+      { path: "/contact", element: <Contact /> },
+      { path: "*", element: <Error /> },
+    ]);
   return (
     <BrowserRouter>
       <header>
         <NavBar />
       </header>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/collections" element={<Collections />} />
-        <Route path="/men" element={<Men />} />
-        <Route path="/women" element={<Women />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="*" element={<Error />} />
-      </Routes>
+      <App />
     </BrowserRouter>
   );
 }
