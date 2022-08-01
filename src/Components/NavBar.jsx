@@ -49,7 +49,10 @@ function NavBar() {
           </div>
           <div className="logo">
             <h1>
-              <Link to="/" onClick={() => dispatch({ payload: "" })}>
+              <Link
+                to="/ecommerce-product-page"
+                onClick={() => dispatch({ payload: "" })}
+              >
                 <div className="logo-svg"></div>
               </Link>
             </h1>
@@ -142,7 +145,9 @@ function NavBar() {
                       product={product}
                     />
                   ))}
-                  <button onClick={() => dispatchCart(cartActions.clearCart())}>Checkout</button>
+                  <button onClick={() => dispatchCart(cartActions.clearCart())}>
+                    Checkout
+                  </button>
                 </div>
               )}
             </div>

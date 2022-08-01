@@ -35,16 +35,17 @@ Users should be able to:
 ### Links
 
 - Solution URL: [GitHub Reop](https://github.com/8xMohab/ecommerce-product-page)
-- Live Site URL: [GitHub Pages](https://8xmohab.github.io/)
+- Live Site URL: [GitHub Pages](https://8xmohab.github.io/ecommerce-product-page)
 
 ## My process
 
-Build components and its html (3.5 Hours)
-Style the components (10 Hours)
-Learn redux and create a store (2 Days)
-Add states and functions to the components (6 Hours)
-Commit changes and push to GitHub
-Run first build and deploy to gh-pages
+- Build components and its html (3.5 Hours)
+- Style the components (10 Hours)
+- Learn redux and create a store (2 Days)
+- Add states and functions to the components (6 Hours)
+- Commit changes and push to GitHub
+- Run first build and deploy to gh-pages
+
 
 ### Built with
 
@@ -55,9 +56,9 @@ Run first build and deploy to gh-pages
 
 ### What I learned
 
- - Using Redux toolkit to manage the app states
- - Remove duplicate items from an array with arr.reduce()
- - Format Numbers (250 => $250.00) with Intl.NumberFormat in javascript
+- Using Redux toolkit to manage the app states
+- Remove duplicate items from an array with arr.reduce()
+- Format Numbers (250 => $250.00) with Intl.NumberFormat in javascript
 
 ## Author
 
