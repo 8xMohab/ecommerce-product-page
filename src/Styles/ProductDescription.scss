@@ -1,0 +1,87 @@
+@import "../Styles/imports/variables.scss";
+.product-description {
+  margin-top: 15px;
+  padding-left: 25px;
+  padding-right: 25px;
+  .text-box {
+    h2 {
+      font-weight: 700;
+      font-size: 26px;
+    }
+    h2:nth-child(1) {
+      color: $PrimOrange;
+      font-size: 15px;
+      text-transform: uppercase;
+    }
+  }
+  .price {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    .price-discount {
+      display: flex;
+      align-items: center;
+      p:nth-child(1) {
+        font-size: 26px;
+        font-weight: 700;
+        margin-right: 15px;
+      }
+      p:nth-child(2) {
+        color: $PrimOrange;
+        font-weight: 700;
+        padding: 3px 5px;
+        border-radius: 5px;
+        background-color: $PrimPaleOrange;
+        text-decoration: none;
+      }
+    }
+    p:nth-child(2) {
+      text-decoration: line-through;
+    }
+  }
+  .number-of-items {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    background-color: $NutrlLightGrayishBlue;
+    padding: 10px 20px;
+    border-radius: 10px;
+    p {
+      margin: 0;
+      font-weight: 700;
+      font-size: 18px;
+      user-select: none;
+    }
+    p:nth-child(1) {
+      color: $PrimOrange;
+    }
+    p:nth-child(3) {
+      color: $PrimOrange;
+    }
+    p:nth-child(1):hover,
+    p:nth-child(3):hover {
+      cursor: pointer;
+    }
+  }
+  button {
+    margin-top: 15px;
+    width: 100%;
+    padding: 10px;
+    font-weight: 700;
+    border: none;
+    border-radius: 10px;
+    background-color: $PrimOrange;
+    color: $NutrlWhite;
+    box-shadow: 0px 30px 40px -13px rgb(255, 168, 102);
+    -webkit-box-shadow: 0px 30px 40px -13px rgb(255, 168, 102);
+    -moz-box-shadow: 0px 30px 40px -13px rgb(255, 168, 102);
+    svg {
+      margin-right: 10px;
+    }
+  }
+  button:active {
+    background-color: rgb(255, 168, 102);
+  }
+}

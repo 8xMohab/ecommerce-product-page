@@ -1,0 +1,79 @@
+@import "../Styles/imports/variables.scss";
+.product-preview {
+  margin-top: 10px;
+  .product-preview-image {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+    height: 300px;
+    background-color: gray;
+    background-position: center;
+    background-size: cover;
+    svg {
+      height: 20px;
+      width: 20px;
+      border-radius: 50%;
+      background-color: $NutrlWhite;
+      padding: 8px;
+    }
+  }
+  .pop-up-preview {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.75);
+    .product-preview-image {
+      position: relative;
+      height: 450px !important;
+      svg {
+        display: block !important;
+      }
+      svg:nth-child(2),
+      svg:nth-child(3) {
+        transform: translate(-35px);
+      }
+      svg:nth-child(3) {
+        transform: translate(35px);
+      }
+      svg:hover {
+        color: $PrimOrange;
+        cursor: pointer;
+      }
+      .close-icon {
+        position: absolute;
+        top: -52px;
+        right: 0;
+        svg {
+          background-color: transparent;
+          color: $NutrlWhite;
+        }
+        svg:hover {
+          color: $PrimOrange;
+        }
+      }
+    }
+    .product-thumbnails {
+      width: 450px !important;
+    }
+  }
+}
+.home {
+  .container {
+    padding: 0;
+  }
+  @media (min-width: 576px) {
+    .product-preview-image {
+      border-radius: 10px;
+    }
+  }
+}

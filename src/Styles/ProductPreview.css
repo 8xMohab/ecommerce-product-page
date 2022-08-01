@@ -1,0 +1,92 @@
+.product-preview {
+  margin-top: 10px;
+}
+.product-preview .product-preview-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 100%;
+  height: 300px;
+  background-color: gray;
+  background-position: center;
+  background-size: cover;
+}
+.product-preview .product-preview-image svg {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: hsl(0deg, 0%, 100%);
+  padding: 8px;
+}
+.product-preview .pop-up-preview {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+.product-preview .pop-up-preview .product-preview-image {
+  position: relative;
+  height: 450px !important;
+}
+.product-preview .pop-up-preview .product-preview-image svg {
+  display: block !important;
+}
+.product-preview .pop-up-preview .product-preview-image svg:nth-child(2),
+.product-preview .pop-up-preview .product-preview-image svg:nth-child(3) {
+  -webkit-transform: translate(-35px);
+          transform: translate(-35px);
+}
+.product-preview .pop-up-preview .product-preview-image svg:nth-child(3) {
+  -webkit-transform: translate(35px);
+          transform: translate(35px);
+}
+.product-preview .pop-up-preview .product-preview-image svg:hover {
+  color: hsl(26deg, 100%, 55%);
+  cursor: pointer;
+}
+.product-preview .pop-up-preview .product-preview-image .close-icon {
+  position: absolute;
+  top: -52px;
+  right: 0;
+}
+.product-preview .pop-up-preview .product-preview-image .close-icon svg {
+  background-color: transparent;
+  color: hsl(0deg, 0%, 100%);
+}
+.product-preview .pop-up-preview .product-preview-image .close-icon svg:hover {
+  color: hsl(26deg, 100%, 55%);
+}
+.product-preview .pop-up-preview .product-thumbnails {
+  width: 450px !important;
+}
+
+.home .container {
+  padding: 0;
+}
+@media (min-width: 576px) {
+  .home .product-preview-image {
+    border-radius: 10px;
+  }
+}

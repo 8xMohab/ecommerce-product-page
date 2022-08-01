@@ -1,0 +1,103 @@
+.product-description {
+  margin-top: 15px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.product-description .text-box h2 {
+  font-weight: 700;
+  font-size: 26px;
+}
+.product-description .text-box h2:nth-child(1) {
+  color: hsl(26deg, 100%, 55%);
+  font-size: 15px;
+  text-transform: uppercase;
+}
+.product-description .price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.product-description .price .price-discount {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.product-description .price .price-discount p:nth-child(1) {
+  font-size: 26px;
+  font-weight: 700;
+  margin-right: 15px;
+}
+.product-description .price .price-discount p:nth-child(2) {
+  color: hsl(26deg, 100%, 55%);
+  font-weight: 700;
+  padding: 3px 5px;
+  border-radius: 5px;
+  background-color: hsl(25deg, 100%, 94%);
+  text-decoration: none;
+}
+.product-description .price p:nth-child(2) {
+  text-decoration: line-through;
+}
+.product-description .number-of-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: hsl(223deg, 64%, 98%);
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+.product-description .number-of-items p {
+  margin: 0;
+  font-weight: 700;
+  font-size: 18px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.product-description .number-of-items p:nth-child(1) {
+  color: hsl(26deg, 100%, 55%);
+}
+.product-description .number-of-items p:nth-child(3) {
+  color: hsl(26deg, 100%, 55%);
+}
+.product-description .number-of-items p:nth-child(1):hover,
+.product-description .number-of-items p:nth-child(3):hover {
+  cursor: pointer;
+}
+.product-description button {
+  margin-top: 15px;
+  width: 100%;
+  padding: 10px;
+  font-weight: 700;
+  border: none;
+  border-radius: 10px;
+  background-color: hsl(26deg, 100%, 55%);
+  color: hsl(0deg, 0%, 100%);
+  box-shadow: 0px 30px 40px -13px rgb(255, 168, 102);
+  -webkit-box-shadow: 0px 30px 40px -13px rgb(255, 168, 102);
+  -moz-box-shadow: 0px 30px 40px -13px rgb(255, 168, 102);
+}
+.product-description button svg {
+  margin-right: 10px;
+}
+.product-description button:active {
+  background-color: rgb(255, 168, 102);
+}

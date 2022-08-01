@@ -1,0 +1,189 @@
+@media screen and (min-width: 762px) {
+  .App nav .bars-icons {
+    display: none;
+  }
+  .App nav .profile-avatar {
+    width: 48px;
+    height: 48px;
+  }
+  .App nav .nav-list ul {
+    position: relative;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    top: unset;
+    -webkit-transform: none;
+            transform: none;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+  .App nav .nav-list ul li:nth-child(1) {
+    display: none;
+  }
+  .App nav .nav-list ul li {
+    margin: 0;
+    margin-left: 30px;
+    font-weight: 400;
+  }
+  .App nav .cart {
+    box-shadow: 0px 10px 54px -24px rgba(0, 0, 0, 0.64);
+    -webkit-box-shadow: 0px 10px 54px -24px rgba(0, 0, 0, 0.64);
+    box-shadow: 0px 10px 54px -24px rgba(0, 0, 0, 0.64);
+    -webkit-box-shadow: 0px 10px 54px -24px rgba(0, 0, 0, 0.64);
+    -moz-box-shadow: 0px 10px 54px -24px rgba(0, 0, 0, 0.64);
+  }
+  .App nav::after {
+    content: "";
+    position: absolute;
+    bottom: -46px;
+    width: 100%;
+    height: 1px;
+    background-color: hsl(219deg, 9%, 45%);
+  }
+  .App .home {
+    margin-top: 80px;
+  }
+  .App .home .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .App .home .product-preview {
+    margin-right: 40px;
+  }
+  .App .home .product-preview .product-preview-image {
+    border-radius: 10px;
+    width: 450px;
+    height: 400px;
+  }
+  .App .home .product-preview .product-preview-image svg {
+    display: none;
+  }
+  .App .home .product-preview .product-thumbnails {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+  }
+  .App .home .product-preview .product-thumbnails .thumbnail {
+    width: 90px;
+    height: 90px;
+    border-radius: 10px;
+    background-position: center;
+    background-size: contain;
+    background-color: white;
+    position: relative;
+  }
+  .App .home .product-preview .product-thumbnails .thumbnail::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 10px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  .App .home .product-preview .product-thumbnails .thumbnail:hover {
+    cursor: pointer;
+  }
+  .App .home .product-preview .product-thumbnails .thumbnail:hover::after {
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+  .App .home .product-preview .active-thumbnail {
+    border: solid 3px hsl(26deg, 100%, 55%);
+    position: relative;
+  }
+  .App .home .product-preview .active-thumbnail::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.7);
+    z-index: 1;
+    border-radius: 5px;
+  }
+  .App .home .product-preview .active-thumbnail::after {
+    display: none;
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.7);
+    z-index: 1;
+    border-radius: 5px !important;
+    -webkit-transition: 0s !important;
+    transition: 0s !important;
+  }
+  .App .home .product-description {
+    padding: 0;
+    max-width: 400px;
+  }
+  .App .home .product-description .text-box h2:nth-child(2) {
+    font-size: 35px;
+  }
+  .App .home .product-description .text-box p {
+    margin-top: 30px;
+  }
+  .App .home .product-description .price {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .App .home .product-description .buying {
+    margin-top: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .App .home .product-description .buying .number-of-items {
+    min-width: 120px;
+    margin-right: 10px;
+    height: 100%;
+  }
+  .App .home .product-description .buying button {
+    margin: 0;
+    height: 100%;
+  }
+  .active {
+    position: relative;
+  }
+  .active::after {
+    content: "";
+    position: absolute;
+    bottom: -59px;
+    width: 100%;
+    height: 4px;
+    background-color: hsl(26deg, 100%, 55%);
+    left: 0;
+    z-index: 1;
+  }
+}
+@media (min-width: 992px) {
+  .App .product-preview {
+    margin-right: 80px !important;
+  }
+  .App .nav-list ul li {
+    margin-left: 40px !important;
+  }
+}

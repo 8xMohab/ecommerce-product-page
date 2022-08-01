@@ -1,0 +1,42 @@
+@import "../Styles/imports/variables.scss";
+.product {
+  display: flex;
+  margin-bottom: 10px;
+  .image {
+    width: 60px;
+    height: 60px;
+    min-width: 60px;
+    margin-right: 10px;
+    background-color: gray;
+    border-radius: 10px;
+    background-size: contain;
+    background-position: center;
+  }
+  .text-box {
+    div {
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+      width: 200px;
+    }
+    div,
+    span {
+      margin: 0;
+      color: $NutrlDarkGrayishBlue;
+      font-size: 16px;
+    }
+    span:nth-child(4) {
+      font-weight: 700;
+    }
+  }
+  .trash-can {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+    color: $NutrlDarkGrayishBlue;
+    font-size: 20px;
+  }
+  .trash-can:hover {
+    cursor: pointer;
+  }
+}

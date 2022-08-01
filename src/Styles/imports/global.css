@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+@media (min-width: 992px) {
+  .App .product-preview {
+    margin-right: 70px;
+  }
+  .App .nav-list ul li {
+    margin-left: 40px;
+  }
+}

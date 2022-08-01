@@ -1,0 +1,178 @@
+@import "../Styles/imports/variables.scss";
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: relative;
+  .logo-container {
+    display: flex;
+    align-items: center;
+    .logo {
+      h1 {
+        margin: 0;
+        .logo-svg {
+          width: 140px;
+          height: 30px;
+          background-image: url("../Assets/logo.svg");
+          background-position: center;
+          background-size: contain;
+          background-repeat: no-repeat;
+        }
+      }
+    }
+    .nav-list {
+      .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.75);
+        z-index: 3;
+        display: none;
+      }
+      ul {
+        display: flex;
+        position: fixed;
+        width: 70%;
+        background-color: $NutrlWhite;
+        height: 100%;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        left: 0;
+        top: 0;
+        align-items: left;
+        padding-top: 10px;
+        transition: 0.3s;
+        transform: translate(-100%);
+        z-index: 3;
+        li {
+          display: inline-block;
+          color: black;
+          margin: 0 0 20px 30px;
+          font-weight: 700;
+          a {
+            text-decoration: none;
+            color: $NutrlBlack;
+          }
+        }
+        li:nth-child(1) {
+          margin-bottom: 30px;
+        }
+        svg:hover {
+          cursor: pointer;
+        }
+      }
+    }
+    .logo {
+      h1 {
+        a {
+          text-decoration: none;
+          color: $NutrlBlack;
+          font-weight: bold;
+          font-size: 35px;
+        }
+      }
+    }
+  }
+  .bars-icons {
+    margin-right: 15px;
+    font-size: 22px;
+    svg:hover {
+      cursor: pointer;
+    }
+  }
+  .cart-profile {
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    .profile-avatar {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background-image: url("../../public/Images/image-avatar.png");
+      background-position: center;
+      background-size: contain;
+      margin-left: 25px;
+    }
+    .profile-avatar:hover {
+      cursor: pointer;
+      border: solid 2px $PrimOrange;
+    }
+    .cart-container {
+      position: relative;
+      .items-badge {
+        position: absolute;
+        top: -3px;
+        z-index: 1;
+        background-color: $PrimOrange;
+        font-size: 10px;
+        width: 20px;
+        color: $NutrlWhite;
+        text-align: center;
+        border-radius: 10px;
+        right: -6px;
+      }
+      svg:hover,
+      .items-badge:hover {
+        cursor: pointer;
+      }
+      .cart {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 65px;
+        right: -66px;
+        width: 370px;
+        background-color: $NutrlWhite;
+        border-radius: 10px;
+        padding: 30px;
+        min-height: 254.5px;
+        z-index: 3;
+        h2 {
+          margin-bottom: 40px;
+          width: 100%;
+          position: relative;
+          font-weight: 700;
+          font-size: 20px;
+        }
+        button {
+          margin-top: 25px;
+          padding: 15px;
+          width: 100%;
+          border: none;
+          background-color: $PrimOrange;
+          color: $NutrlWhite;
+          border-radius: 10px;
+          font-size: 18px;
+          font-weight: 700;
+        }
+        .empty-cart {
+          display: flex;
+          align-items: center;
+          text-align: center;
+          justify-content: center;
+          width: 100%;
+          height: 130px;
+          p {
+            margin: 0;
+            font-size: 16px;
+            font-weight: 700;
+          }
+        }
+      }
+      .cart::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        background-color: gray;
+        top: 75px;
+        left: 0;
+      }
+    }
+  }
+}
